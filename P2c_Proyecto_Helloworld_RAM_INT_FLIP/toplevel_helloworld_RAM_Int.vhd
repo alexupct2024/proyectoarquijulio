@@ -33,13 +33,23 @@ architecture behavioral of toplevel is
     end component;
 
 -----------------------------------------------------------------
--- declaración de la ROM de programa
+-- declaraciï¿½n de la ROM de programa
 -----------------------------------------------------------------
   component programa_helloworld_int_FLIP
     Port (      address : in std_logic_vector(7 downto 0);
             		   dout : out std_logic_vector(15 downto 0);
                     clk : in std_logic);
     end component;
+
+-----------------------------------------------------------------
+-- declaracion del periferico de paridad
+-----------------------------------------------------------------
+  component parity_unit
+    Port (
+        data_in : in  std_logic_vector(7 downto 0);
+        Y       : out std_logic_vector(7 downto 0)
+    );
+  end component;
 
 -----------------------------------------------------------------
 -- Signals usadas para conectar el picoblaze y la ROM de programa
@@ -69,6 +79,8 @@ x"4F", x"4E", x"54", x"49", x"4E", x"55", x"45", x"20",
 x"2A", x"0A", x"0D", x"00", x"00", x"00", x"00", x"00" );
 
 signal rxbuff_out,RAM_out: std_logic_vector(7 downto 0);
+signal parity_data_in  : std_logic_vector(7 downto 0);
+signal parity_data_out : std_logic_vector(7 downto 0);
 
 begin
 
@@ -98,8 +110,16 @@ begin
     port map(     address => address,
                	     dout => instruction,
                       clk => clk);
+					
+  parity_block: parity_unit
+    port map(
+        data_in => parity_data_in,
+        Y       => parity_data_out
+    );
 
-	--registra el bit tx del puerto de salida, por si éste cambia
+					  
+
+	--registra el bit tx del puerto de salida, por si ï¿½ste cambia
 	txbuff:process(reset, clk)
 	begin
 		if (reset='1') then
@@ -111,7 +131,7 @@ begin
 		end if;
 	end process;
 	
-	--añade 7ceros a rx para meterlos al puerto de entrada cuando se lea
+	--aï¿½ade 7ceros a rx para meterlos al puerto de entrada cuando se lea
 	rxbuff:process(reset, clk)
 	begin
 		if (reset='1') then
@@ -122,21 +142,34 @@ begin
 			end if;		 
 		end if;
 	end process;
+
+		-- registra el dato de entrada para el periferico de paridad
+	paritybuff:process(reset, clk)
+	begin
+		if (reset='1') then
+			parity_data_in <= (others=>'0');
+		elsif rising_edge(clk) then
+			if (writestrobe = '1' and portid = x"FD") then
+				parity_data_in <= outport;
+			end if;
+		end if;
+	end process;
 	
 	-- Memoria RAM (escritura sincrona / lectura asincrona)
 	process (clk)
 	begin
 		if (clk'event and clk = '1') then
 			if (writestrobe = '1' and portid<x"40") then
-				RAM(to_integer(unsigned(portid))) <= outport;
+				RAM(to_integer(unsigned(portid(5 downto 0)))) <= outport;
 			end if;
 		end if;
 	end process;
-	RAM_out <= RAM(to_integer(unsigned(portid)));
+	RAM_out <= RAM(to_integer(unsigned(portid(5 downto 0))));
 	
 -- Multiplexor inport
-inport <= RAM_out when (readstrobe = '1' and portid<x"40") else
-			 rxbuff_out when (readstrobe = '1' and portid=x"FF") else
+inport <= RAM_out         when (readstrobe = '1' and portid<x"40") else
+			 parity_data_out when (readstrobe = '1' and portid=x"FE") else
+			 rxbuff_out      when (readstrobe = '1' and portid=x"FF") else
 			 x"00";
 
 end behavioral;
