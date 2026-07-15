@@ -67,8 +67,8 @@ bit2 bit1 bit0
 #define SHIFT_LEFT 0
 
 /* flip */ /* added new instruction */
-char *flip_id = "11111";                                           //Codigo de operacion, 5 bits más significativos de los 16 que forman las instrucción
-
+char *flip_id = "11111";                                           //Codigo de operacion, 5 bits mï¿½s significativos de los 16 que forman las instrucciï¿½n
+char *swap_id = "10101";
 
 /* input/output group */
 char *input_p_to_x_id = "10000";
@@ -87,11 +87,11 @@ char *not_zero_id = "01";
 char *carry_id = "10";
 char *not_carry_id = "11";
 
-#define MAX_LINE_COUNT 1000 /* max 1000 lines allowed */            // Máximo numero de lineas del programa, incluye lineas con comentarios.
+#define MAX_LINE_COUNT 1000 /* max 1000 lines allowed */            // Mï¿½ximo numero de lineas del programa, incluye lineas con comentarios.
 #define PROGRAM_COUNT 256	/* total program word */                // Maximo numero de instrucciones en el programa
         
 /* increase instruction_count for added new instruction */
-#define instruction_count 30/* total instruction set */             // Numero máximo de instrucciones
+#define instruction_count 31/* total instruction set */             // Numero mï¿½ximo de instrucciones
 
 #define CONSTANT_COUNT 100	/* max 100 constant can be declared */
 #define REG_COUNT 8			/* max 8 namereg can be declared */     // Maximo Numero de registros 
@@ -106,7 +106,7 @@ char linebuf[200];                                                 // Linea del 
 int line_count = 0;
 int constant_count = 0;
 int reg_count = 0;
-unsigned program_word[PROGRAM_COUNT]; /* program word array */     // Matria para almacenar el codigo máguina
+unsigned program_word[PROGRAM_COUNT]; /* program word array */     // Matria para almacenar el codigo mï¿½guina
 
 typedef struct reg {
 	char *name;
@@ -122,7 +122,7 @@ typedef struct constant {
 
 constant_t constant_set[CONSTANT_COUNT]; /* constant array */
 
-typedef struct opcode {                                            //estructura con los campos de la instrucción
+typedef struct opcode {                                            //estructura con los campos de la instrucciï¿½n
 	unsigned int address;
 	char *label;
 	char *instruction;
@@ -163,7 +163,8 @@ char *instruction_set[] = {
 	"CONSTANT",	/* 26 */
 	"NAMEREG",	/* 27 */
 	"ADDRESS",	/* 28 */
-	"FLIP"};	/* 29 */ /* added new instruction */
+	"FLIP",		/* 29 */
+	"SWAP"};	/* 30 */ /* added new instruction */
 
 int error = 0;
 /*====================================== */
@@ -226,7 +227,7 @@ int register_number(char *s)
 }
 
 /*====================================== */
-void insert_instruction(char *s, int p)                                    // crea codigo máquina: campo de instrucciones
+void insert_instruction(char *s, int p)                                    // crea codigo mï¿½quina: campo de instrucciones
 {
 	int i, l;
 	unsigned n = 0;
@@ -240,25 +241,25 @@ void insert_instruction(char *s, int p)                                    // cr
 }
 
 /*====================================== */
-void insert_sXX(int c, int p)                                              // crea codigo máquina: campo 1er registro                  
+void insert_sXX(int c, int p)                                              // crea codigo mï¿½quina: campo 1er registro                  
 {
 	program_word[p] = program_word[p] | (unsigned) (c << 8);
 }
 
 /*====================================== */
-void insert_sYY(int c, int p)                                              // crea codigo máquina: campo 2er registro 
+void insert_sYY(int c, int p)                                              // crea codigo mï¿½quina: campo 2er registro 
 {
 	program_word[p] = program_word[p] | (unsigned) (c << 5);
 }
 
 /*====================================== */
-void insert_constant(int c, int p)                                         // crea codigo máquina: campo Inmediato
+void insert_constant(int c, int p)                                         // crea codigo mï¿½quina: campo Inmediato
 {
 	program_word[p] = program_word[p] | (unsigned) (c);
 }
 
 /*====================================== */
-void insert_flag(int c, int p)                                             // crea codigo máquina: campo Flag
+void insert_flag(int c, int p)                                             // crea codigo mï¿½quina: campo Flag
 {
 	program_word[p] = program_word[p] | (unsigned) (c << 8);
 }
@@ -361,14 +362,14 @@ int parse_linebuf(void)                                                    // an
 }
 
 /*====================================== */
-/* syntax test and assign addresses */                                     // comprobación de sintaxis de los campos de la instruccion
+/* syntax test and assign addresses */                                     // comprobaciï¿½n de sintaxis de los campos de la instruccion
 void test_instructions(void)
 {
 	int i, j, k;
 	int address = 0;
 
 	for(i = 0; i < line_count; i++){                                      // para todas las lineas del programa
-		if(op[i].instruction != NULL){                                    // si la linea contiene codigo de operación comprueba si conincide con las definidas en el juego de instrucciones
+		if(op[i].instruction != NULL){                                    // si la linea contiene codigo de operaciï¿½n comprueba si conincide con las definidas en el juego de instrucciones
 			for(j = 0; j < instruction_count; j++)                        // si no coincide con ninguna detecta error.
 				if(!stricmp(op[i].instruction, instruction_set[j]))
 					break;
@@ -377,7 +378,7 @@ void test_instructions(void)
 				fprintf(ofp,"Unknown instruction - %s found on line %d\n",op[i].instruction, i+1);
 				error++;
 			}
-			switch (j)                                                    // comprueba a que clase de codigo de operación pertenece
+			switch (j)                                                    // comprueba a que clase de codigo de operaciï¿½n pertenece
 			{
 				case 0: /* JUMP */
 				case 1: /* CALL */                                        // Para el caso CALL comprueba que si tiene operando2, el operando1 debe ser un Flag (Z,NZ,C,NC)
@@ -405,7 +406,7 @@ void test_instructions(void)
 							error++;
 						}
 					}
-					break;                                                  // Para instrucciones aritmetica lógicas comprueba que tiene operando1 y operando2.
+					break;                                                  // Para instrucciones aritmetica lï¿½gicas comprueba que tiene operando1 y operando2.
 				case 3: /* LOAD */
 				case 4: /* AND */
 				case 5: /* OR */
@@ -431,6 +432,7 @@ void test_instructions(void)
 				case 19: /* SLA */
 				case 20: /* RL */
 				case 29: /* FLIP */ /* added new instruction, same syntax with shift/rotate */
+				case 30: /* SWAP */
 					if(op[i].op2 != NULL){
 						printf("ERROR - Too many Operands for %s on line %d\n", op[i].instruction, i+1);
 						fprintf(ofp,"ERROR - Too many Operands for %s on line %d\n", op[i].instruction, i+1);
@@ -564,7 +566,7 @@ void test_instructions(void)
 					}
 					break;
 			}
-			op[i].address = address;                                                      // si la instrucción analizada es una instruccion (no directiva) incrementa la dirección de memoria donde se almacena.
+			op[i].address = address;                                                      // si la instrucciï¿½n analizada es una instruccion (no directiva) incrementa la direcciï¿½n de memoria donde se almacena.
 			/* add (j > 28) for FLIP instruction, - added new instruction */
 			if((j < 26) ||(j > 28)) address ++;
 		} else op[i].address = address; /* This is a comment line*/
@@ -573,28 +575,28 @@ void test_instructions(void)
 
 /*====================================== */
 /* parse instructions and write program word */
-void write_program_word(void)                                                             // analizador de instrucciones y escritura de código máquina.
+void write_program_word(void)                                                             // analizador de instrucciones y escritura de cï¿½digo mï¿½quina.
 {
 	int i, j, reg_n;
 	char *kptr, *sptr;
 
 	for(i = 0; i < line_count; i++){                                                     // para todas las lineas del programa               
-		if(op[i].instruction != NULL){                                                   // si la linea contiene codigo de operación comprueba si conincide con las definidas en el juego de instrucciones
+		if(op[i].instruction != NULL){                                                   // si la linea contiene codigo de operaciï¿½n comprueba si conincide con las definidas en el juego de instrucciones
 			for(j = 0; j < instruction_count; j++)                                       // si no coincide pasa a la siguiente linea de programa
 				if(!stricmp(op[i].instruction, instruction_set[j]))
 					break;
-			switch (j)                                                                   // comprueba a que clase de codigo de operación pertenece
+			switch (j)                                                                   // comprueba a que clase de codigo de operaciï¿½n pertenece
 			{
 				case 0: /* JUMP */
 				case 1: /* CALL */                                                       // para el caso de CALL o JUMP
 					if(j == 0)
-						kptr = jump_id;                                                  // comprueba el codigo de operacion si es JUMP o CALL (kptr: instrucción cuyo operando es una constante)
+						kptr = jump_id;                                                  // comprueba el codigo de operacion si es JUMP o CALL (kptr: instrucciï¿½n cuyo operando es una constante)
 					else
 						kptr = call_id;
-					insert_instruction(kptr, op[i].address);                             // inserta codigo maquina del campo de operación.
+					insert_instruction(kptr, op[i].address);                             // inserta codigo maquina del campo de operaciï¿½n.
 					if(op[i].op2 == NULL){                                               // comprueba si no hay operando2 --> solo 2 instrucciones: CALL aa; JUMP aa
 						if((reg_n = find_label(op[i].op1)) != -1){                                    // revisa si es etiqueta, constante, si es hexadecimal, o si es un operando no valido.
-							insert_constant(reg_n, op[i].address);                                    // inserta codigo maquina de dirección 
+							insert_constant(reg_n, op[i].address);                                    // inserta codigo maquina de direcciï¿½n 
 						} else if((reg_n = find_constant(op[i].op1)) != -1){
 							insert_constant(reg_n, op[i].address);
 						} else if(((reg_n = htoi(op[i].op1)) != -1) && (reg_n < PROGRAM_COUNT)){
@@ -609,7 +611,7 @@ void write_program_word(void)                                                   
 							reg_n = decode_flag(op[i].op1);
 							insert_flag(reg_n, op[i].address);                            // revisa Flag e inserca codigo maquina del Flag
 						}
-						if((reg_n = find_label(op[i].op2)) != -1){                        // inserta codigo maquina de dirección (operando 2)
+						if((reg_n = find_label(op[i].op2)) != -1){                        // inserta codigo maquina de direcciï¿½n (operando 2)
 							insert_constant(reg_n, op[i].address);
 						} else if((reg_n = find_constant(op[i].op2)) != -1){
 							insert_constant(reg_n, op[i].address);
@@ -637,9 +639,9 @@ void write_program_word(void)                                                   
 				case 8: /* ADDCY */
 				case 9: /* SUB */
 				case 10: /* SUBCY */
-					if(j == 3){ kptr = load_k_to_x_id; sptr = load_y_to_x_id;}                    // determina el codigo máquina del codigo de operación
-					if(j == 4){ kptr = and_k_to_x_id; sptr = and_y_to_x_id;}                      // (sptr: instrucción cuyo 2do operando es un registro)
-					if(j == 5){ kptr = or_k_to_x_id; sptr = or_y_to_x_id;}                        // (kptr: instrucción cuyo 2do operando es una constante)
+					if(j == 3){ kptr = load_k_to_x_id; sptr = load_y_to_x_id;}                    // determina el codigo mï¿½quina del codigo de operaciï¿½n
+					if(j == 4){ kptr = and_k_to_x_id; sptr = and_y_to_x_id;}                      // (sptr: instrucciï¿½n cuyo 2do operando es un registro)
+					if(j == 5){ kptr = or_k_to_x_id; sptr = or_y_to_x_id;}                        // (kptr: instrucciï¿½n cuyo 2do operando es una constante)
 					if(j == 6){ kptr = xor_k_to_x_id; sptr = xor_y_to_x_id;}
 					if(j == 7){ kptr = add_k_to_x_id; sptr = add_y_to_x_id;}
 					if(j == 8){ kptr = addcy_k_to_x_id; sptr = addcy_y_to_x_id;}
@@ -773,11 +775,24 @@ void write_program_word(void)                                                   
 				case 28: /* ADDRESS */
 					break;
 				case 29: /* FLIP */ /* added new instruction */                          // para el caso de instrucciones FLIP.   
-					insert_instruction(flip_id, op[i].address);                          // inserta codigo máquina del codigo de operacion.
+					insert_instruction(flip_id, op[i].address);                          // inserta codigo mï¿½quina del codigo de operacion.
 					if((reg_n = find_namereg(op[i].op1)) != -1)                          // Solo tiene un operando que siempre sera un registro o un namereg, sino error.
 						insert_sXX(reg_n, op[i].address);                                // inserta dodigo maquina del 2do operando si es namereg
 					else if((reg_n = register_number(op[i].op1)) != -1)                  
-						insert_sXX(reg_n, op[i].address);                                // inserta codigo máquina del 2do operando si es registro
+						insert_sXX(reg_n, op[i].address);                                // inserta codigo mï¿½quina del 2do operando si es registro
+					else {
+						printf("ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
+						fprintf(ofp,"ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
+						error++;
+					}
+					break;
+				case 30: /* SWAP */
+					insert_instruction(swap_id, op[i].address);
+
+					if((reg_n = find_namereg(op[i].op1)) != -1)
+						insert_sXX(reg_n, op[i].address);
+					else if((reg_n = register_number(op[i].op1)) != -1)
+						insert_sXX(reg_n, op[i].address);
 					else {
 						printf("ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
 						fprintf(ofp,"ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
@@ -1015,7 +1030,7 @@ int main(int argc, char **argv)                                                 
 	write_mcs();
 	write_vhd();
 
-	free_mem();                                                                               // LIBERA ESTRUCTURA CON CAMPOS DE OPERACIÓN
+	free_mem();                                                                               // LIBERA ESTRUCTURA CON CAMPOS DE OPERACIï¿½N
 	printf("Program completed...\n");
 	fprintf(ofp,"Program completed...\n");
 	fclose(ifp);
