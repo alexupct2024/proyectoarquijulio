@@ -39,7 +39,6 @@ signal returni_or_shift_decode : std_logic;
 signal returni_or_shift_valid  : std_logic;
 signal arith_or_logical_decode : std_logic;
 signal arith_or_logical_valid  : std_logic;
-signal i_swap : std_logic;
 --
 begin
   --
