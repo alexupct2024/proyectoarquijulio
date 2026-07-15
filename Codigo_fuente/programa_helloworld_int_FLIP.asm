@@ -9,6 +9,8 @@
             	;declaracion de constantes y variables
             	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;                  
             	CONSTANT	rs232, FF		; puerto comunicacion serie es el FF
+				CONSTANT parity_data, FD
+				CONSTANT parity_result, FE
             						; rx es el bit 0 del puerto FF(entrada)
 							; tx es el bit 7 del puerto FF(salida), esto es porque
 		;el hyperterminal envia primero el LSB, por eso vamos desplazando a la 
@@ -26,22 +28,27 @@
             	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 		DISABLE INTERRUPT
 start:		CALL		recibe
-		;Instrucciones para la parte1
-		LOAD		S7,00
-parte1:		INPUT		txreg,S7
-		ADD		txreg,00
-		JUMP Z		parte2
-		CALL		transmite
-		ADD		S7,01
-		JUMP		parte1
-		;Instrucciones para la parte2
-parte2:		ENABLE INTERRUPT
-bucle1:		LOAD 		S6,09
-bucle2:		SUB		S6,01
-		JUMP NZ		bucle2
-		LOAD		S6,09
-		JUMP		bucle2
-		
+
+ADDRESS 00
+
+DISABLE INTERRUPT
+
+start:
+        CALL recibe
+
+        ; Enviar el caracter recibido al periferico
+        OUTPUT rxreg, parity_data
+
+        ; Leer el resultado: 00 si es par, 01 si es impar
+        INPUT txreg, parity_result
+
+        ; Convertir 00/01 en ASCII '0'/'1'
+        ADD txreg, 30
+
+        ; Mostrar el resultado por RS-232
+        CALL transmite
+
+        JUMP start
 		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
             	;Rutina de recepcion de caracteres
             	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -139,18 +146,4 @@ espera3:	SUB		cont2, 01
         	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
         	; FIN
         	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-        	; RUTINA DE ATENCION A LA INTERRUPCIÓN
-        	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-interrup:	DISABLE 	INTERRUPT
-		CALL 		recibe
-		FLIP		rxreg
-		LOAD 		txreg,rxreg
-		CALL 		transmite
-		ADD		S6,30
-		LOAD 		txreg,S6
-		CALL 		transmite
-		RETURNI		ENABLE
-		ADDRESS		FF
-		JUMP		interrup
 
