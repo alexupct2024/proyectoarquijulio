@@ -1,5 +1,6 @@
 vhdl work "zero_flag_logic.vhd"
 vhdl work "T_state_and_Reset.vhd"
+vhdl work "swap.vhd"
 vhdl work "stack_ram.vhd"
 vhdl work "stack_counter.vhd"
 vhdl work "shift_rotate.vhd"

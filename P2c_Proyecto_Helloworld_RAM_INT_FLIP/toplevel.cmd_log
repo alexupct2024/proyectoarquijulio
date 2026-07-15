@@ -17,3 +17,4 @@ map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o topleve
 par -w -intstyle ise -ol high -t 1 toplevel_map.ncd toplevel.ncd toplevel.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml toplevel.twx toplevel.ncd -o toplevel.twr toplevel.pcf -ucf PicoBlaze_s3estarter.ucf 
 bitgen -intstyle ise -f toplevel.ut toplevel.ncd 
+xst -intstyle ise -ifn "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel.xst" -ofn "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel.syr" 

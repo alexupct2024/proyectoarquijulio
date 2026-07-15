@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: toplevel.prj
 
@@ -113,6 +113,9 @@ Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2
 Architecture low_level_definition of Entity shift_rotate is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd" in Library work.
 Architecture low_level_definition of Entity flip is up to date.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/swap.vhd" in Library work.
+Entity <swap> compiled.
+Entity <swap> (Architecture <low_level_definition>) compiled.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd" in Library work.
 Architecture low_level_definition of Entity logical_bus_processing is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd" in Library work.
@@ -138,12 +141,12 @@ Architecture low_level_definition of Entity interrupt_capture is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd" in Library work.
 Architecture low_level_definition of Entity interrupt_logic is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd" in Library work.
-Architecture behavioral of Entity picoblaze is up to date.
+Entity <picoblaze> compiled.
+Entity <picoblaze> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd" in Library work.
 Architecture v1 of Entity programa_helloworld_int_flip is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/parity_unit.vhd" in Library work.
-Entity <parity_unit> compiled.
-Entity <parity_unit> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity parity_unit is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" in Library work.
 Architecture behavioral of Entity toplevel is up to date.
 
@@ -165,6 +168,8 @@ Analyzing hierarchy for entity <arithmetic_process> in library <work> (architect
 Analyzing hierarchy for entity <shift_rotate> in library <work> (architecture <low_level_definition>).
 
 Analyzing hierarchy for entity <flip> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <swap> in library <work> (architecture <low_level_definition>).
 
 Analyzing hierarchy for entity <logical_bus_processing> in library <work> (architecture <low_level_definition>).
 
@@ -224,6 +229,9 @@ Entity <shift_rotate> analyzed. Unit <shift_rotate> generated.
 
 Analyzing Entity <flip> in library <work> (Architecture <low_level_definition>).
 Entity <flip> analyzed. Unit <flip> generated.
+
+Analyzing Entity <swap> in library <work> (Architecture <low_level_definition>).
+Entity <swap> analyzed. Unit <swap> generated.
 
 Analyzing Entity <logical_bus_processing> in library <work> (Architecture <low_level_definition>).
 Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
@@ -325,6 +333,14 @@ Synthesizing Unit <flip>.
     Summary:
 	inferred   8 D-type flip-flop(s).
 Unit <flip> synthesized.
+
+
+Synthesizing Unit <swap>.
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/swap.vhd".
+    Found 8-bit register for signal <Y>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <swap> synthesized.
 
 
 Synthesizing Unit <logical_bus_processing>.
@@ -500,8 +516,8 @@ Macro Statistics
  256x16-bit ROM                                        : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Registers                                            : 160
- 1-bit register                                        : 156
+# Registers                                            : 168
+ 1-bit register                                        : 164
  16-bit register                                       : 1
  8-bit register                                        : 3
 # Comparators                                          : 1
@@ -563,8 +579,8 @@ Macro Statistics
  64x8-bit single-port distributed RAM                  : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Registers                                            : 180
- Flip-Flops                                            : 180
+# Registers                                            : 188
+ Flip-Flops                                            : 188
 # Comparators                                          : 1
  8-bit comparator less                                 : 1
 # Multiplexers                                         : 24
@@ -587,6 +603,8 @@ Optimizing unit <shift_rotate> ...
 
 Optimizing unit <flip> ...
 
+Optimizing unit <swap> ...
+
 Optimizing unit <logical_bus_processing> ...
 
 Optimizing unit <register_and_flag_enable> ...
@@ -607,6 +625,14 @@ Optimizing unit <picoblaze> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_3> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_0> 
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_6> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_5> 
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_7> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_4> 
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_0> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_3> 
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_1> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_2> 
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_4> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_7> 
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_2> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_1> 
+INFO:Xst:2261 - The FF/Latch <processor/swap_group/Y_5> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/flip_group/Y_6> 
 Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 4.
 
 Final Macro Processing ...
@@ -645,17 +671,16 @@ Design Statistics
 # IOs                              : 31
 
 Cell Usage :
-# BELS                             : 382
+# BELS                             : 384
 #      GND                         : 1
 #      INV                         : 3
-#      LUT2                        : 8
-#      LUT2_L                      : 1
-#      LUT3                        : 140
-#      LUT3_D                      : 8
-#      LUT3_L                      : 8
-#      LUT4                        : 111
-#      LUT4_D                      : 22
-#      LUT4_L                      : 13
+#      LUT2                        : 9
+#      LUT3                        : 149
+#      LUT3_D                      : 9
+#      LUT3_L                      : 2
+#      LUT4                        : 106
+#      LUT4_D                      : 19
+#      LUT4_L                      : 19
 #      MUXF5                       : 51
 #      MUXF6                       : 15
 #      VCC                         : 1
@@ -683,10 +708,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      197  out of   4656     4%  
+ Number of Slices:                      193  out of   4656     4%  
  Number of Slice Flip Flops:            174  out of   9312     1%  
- Number of 4 input LUTs:                346  out of   9312     3%  
-    Number used as logic:               314
+ Number of 4 input LUTs:                348  out of   9312     3%  
+    Number used as logic:               316
     Number used as RAMs:                 32
  Number of IOs:                          31
  Number of bonded IOBs:                  31  out of    232    13%  
@@ -730,9 +755,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 14.580ns (Maximum Frequency: 68.587MHz)
+   Minimum period: 14.599ns (Maximum Frequency: 68.497MHz)
    Minimum input arrival time before clock: 3.097ns
-   Maximum output required time after clock: 15.502ns
+   Maximum output required time after clock: 15.368ns
    Maximum combinational path delay: 5.490ns
 
 Timing Detail:
@@ -741,10 +766,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 14.580ns (frequency: 68.587MHz)
-  Total number of paths / destination ports: 38308 / 431
+  Clock period: 14.599ns (frequency: 68.497MHz)
+  Total number of paths / destination ports: 37696 / 431
 -------------------------------------------------------------------------
-Delay:               14.580ns (Levels of Logic = 9)
+Delay:               14.599ns (Levels of Logic = 9)
   Source:            program/Mrom_dout_rom0000 (RAM)
   Destination:       processor/zero_logic/zero_flag (FF)
   Source Clock:      clk rising
@@ -757,17 +782,17 @@ Delay:               14.580ns (Levels of Logic = 9)
      RAMB16_S18:CLK->DO5   35   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
      LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6)
      MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5)
-     MUXF6:I0->O           2   0.521   0.482  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<1>)
-     LUT3:I2->O           75   0.704   1.276  processor/second_operand<1>1 (port_id_1_OBUF)
+     MUXF6:I0->O           7   0.521   0.743  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<1>)
+     LUT3:I2->O           16   0.704   1.034  processor/second_operand<1>1_1 (processor/second_operand<1>1)
      RAM32X1S:A1->O        1   1.025   0.455  Mram_RAM9 (N20)
      LUT4:I2->O            2   0.704   0.451  inport<4>13 (inport<4>13)
-     LUT4:I3->O            9   0.704   0.995  processor/ALU_result_4_or000038 (processor/ALU_result<4>)
+     LUT4:I3->O            9   0.704   0.995  processor/ALU_result_4_or000057 (processor/ALU_result<4>)
      LUT4:I0->O            1   0.704   0.424  processor/zero_logic/next_zero_flag33 (processor/zero_logic/next_zero_flag33)
      LUT4:I3->O            1   0.704   0.000  processor/zero_logic/next_zero_flag49 (processor/zero_logic/next_zero_flag)
      FDRE:D                    0.308          processor/zero_logic/zero_flag
     ----------------------------------------
-    Total                     14.580ns (9.199ns logic, 5.381ns route)
-                                       (63.1% logic, 36.9% route)
+    Total                     14.599ns (9.199ns logic, 5.400ns route)
+                                       (63.0% logic, 37.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -793,7 +818,7 @@ Offset:              3.097ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 3138 / 27
 -------------------------------------------------------------------------
-Offset:              15.502ns (Levels of Logic = 8)
+Offset:              15.368ns (Levels of Logic = 8)
   Source:            program/Mrom_dout_rom0000 (RAM)
   Destination:       in_port<7> (PAD)
   Source Clock:      clk rising
@@ -803,17 +828,17 @@ Offset:              15.502ns (Levels of Logic = 8)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      RAMB16_S18:CLK->DO5   35   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
-     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_6)
-     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_4_f5)
-     MUXF6:I0->O           1   0.521   0.455  processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<0>)
-     LUT3:I2->O           72   0.704   1.279  processor/second_operand<0>1 (port_id_0_OBUF)
-     LUT4:I3->O            8   0.704   0.761  inport<0>4_SW1 (N38)
-     LUT4:I3->O            9   0.704   0.855  inport<7>11 (rxbuff_out_and0000)
-     LUT3:I2->O            1   0.704   0.420  inport<7>15 (in_port_7_OBUF)
+     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6)
+     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5)
+     MUXF6:I0->O           7   0.521   0.743  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<1>)
+     LUT3:I2->O           20   0.704   1.102  processor/second_operand<1>1_2 (processor/second_operand<1>11)
+     RAM32X1S:A1->O        1   1.025   0.455  Mram_RAM15 (N32)
+     LUT4_D:I2->O          1   0.704   0.595  inport<7>13 (inport<7>13)
+     LUT3:I0->O            1   0.704   0.420  inport<7>15 (in_port_7_OBUF)
      OBUF:I->O                 3.272          in_port_7_OBUF (in_port<7>)
     ----------------------------------------
-    Total                     15.502ns (10.434ns logic, 5.068ns route)
-                                       (67.3% logic, 32.7% route)
+    Total                     15.368ns (10.755ns logic, 4.613ns route)
+                                       (70.0% logic, 30.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -837,13 +862,13 @@ Delay:               5.490ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.03 secs
+Total CPU time to Xst completion: 11.64 secs
  
 --> 
 
-Total memory usage is 4531904 kilobytes
+Total memory usage is 4548124 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
 
