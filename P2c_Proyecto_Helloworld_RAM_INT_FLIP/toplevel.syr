@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: toplevel.prj
 
@@ -104,48 +104,6 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/toplevel is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
-WARNING:HDLParsers:3607 - Unit work/toplevel/behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
-WARNING:HDLParsers:3607 - Unit work/picoblaze is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
-WARNING:HDLParsers:3607 - Unit work/picoblaze/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
-WARNING:HDLParsers:3607 - Unit work/programa_helloworld_int_FLIP is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
-WARNING:HDLParsers:3607 - Unit work/programa_helloworld_int_FLIP/v1 is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
-WARNING:HDLParsers:3607 - Unit work/arithmetic_process is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/arithmetic_process/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/addsub8 is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/addsub8/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/carry_flag_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/carry_flag_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/flip is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
-WARNING:HDLParsers:3607 - Unit work/flip/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_capture is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_capture/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/IO_strobe_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/IO_strobe_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/logical_bus_processing is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
-WARNING:HDLParsers:3607 - Unit work/logical_bus_processing/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
-WARNING:HDLParsers:3607 - Unit work/program_counter is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/program_counter/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_and_flag_enable is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_and_flag_enable/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_bank is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_bank/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_Nx1 is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_Nx1/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/shift_rotate is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
-WARNING:HDLParsers:3607 - Unit work/shift_rotate/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_counter is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_counter/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_ram is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_ram/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_x1s is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_x1s/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/T_state_and_Reset is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
-WARNING:HDLParsers:3607 - Unit work/T_state_and_Reset/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
-WARNING:HDLParsers:3607 - Unit work/zero_flag_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/zero_flag_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd" in Library work.
 Architecture low_level_definition of Entity io_strobe_logic is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd" in Library work.
@@ -185,7 +143,7 @@ Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2
 Architecture v1 of Entity programa_helloworld_int_flip is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/parity_unit.vhd" in Library work.
 Entity <parity_unit> compiled.
-Entity <parity_unit> (Architecture <Behavioral>) compiled.
+Entity <parity_unit> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" in Library work.
 Architecture behavioral of Entity toplevel is up to date.
 
@@ -198,7 +156,7 @@ Analyzing hierarchy for entity <picoblaze> in library <work> (architecture <beha
 
 Analyzing hierarchy for entity <programa_helloworld_int_FLIP> in library <work> (architecture <v1>).
 
-Analyzing hierarchy for entity <parity_unit> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <parity_unit> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <IO_strobe_logic> in library <work> (architecture <low_level_definition>).
 
@@ -315,7 +273,7 @@ Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
 Analyzing Entity <programa_helloworld_int_FLIP> in library <work> (Architecture <v1>).
 Entity <programa_helloworld_int_FLIP> analyzed. Unit <programa_helloworld_int_FLIP> generated.
 
-Analyzing Entity <parity_unit> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <parity_unit> in library <work> (Architecture <behavioral>).
 Entity <parity_unit> analyzed. Unit <parity_unit> generated.
 
 
@@ -879,13 +837,13 @@ Delay:               5.490ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.27 secs
+Total CPU time to Xst completion: 12.03 secs
  
 --> 
 
-Total memory usage is 4532596 kilobytes
+Total memory usage is 4531904 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   43 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 
