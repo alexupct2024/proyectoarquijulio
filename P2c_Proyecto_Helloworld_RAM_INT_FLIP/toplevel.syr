@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: toplevel.prj
 
@@ -104,87 +104,89 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/toplevel is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/toplevel_helloworld_RAM_Int.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
-WARNING:HDLParsers:3607 - Unit work/toplevel/behavioral is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/toplevel_helloworld_RAM_Int.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
-WARNING:HDLParsers:3607 - Unit work/picoblaze is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/picoblaze.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
-WARNING:HDLParsers:3607 - Unit work/picoblaze/Behavioral is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/picoblaze.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
-WARNING:HDLParsers:3607 - Unit work/programa_helloworld_int_FLIP is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/programa_helloworld_int_FLIP.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
-WARNING:HDLParsers:3607 - Unit work/programa_helloworld_int_FLIP/v1 is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/programa_helloworld_int_FLIP.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
-WARNING:HDLParsers:3607 - Unit work/arithmetic_process is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/arithmatic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/arithmetic_process/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/arithmatic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/addsub8 is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/arithmatic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/addsub8/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/arithmatic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
-WARNING:HDLParsers:3607 - Unit work/carry_flag_logic is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/carry_flag_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/carry_flag_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/carry_flag_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/flip is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/flip.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
-WARNING:HDLParsers:3607 - Unit work/flip/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/flip.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_capture is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/interrupt_capture.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_capture/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/interrupt_capture.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_logic is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/interrupt_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/interrupt_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/interrupt_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/IO_strobe_logic is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/IO_strobe_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/IO_strobe_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/IO_strobe_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/logical_bus_processing is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/logical_bus_processing.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
-WARNING:HDLParsers:3607 - Unit work/logical_bus_processing/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/logical_bus_processing.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
-WARNING:HDLParsers:3607 - Unit work/program_counter is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/program_counter.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/program_counter/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/program_counter.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_and_flag_enable is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/register_and_flag_enable.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_and_flag_enable/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/register_and_flag_enable.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_bank is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/register_bank.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/register_bank/Behavioral is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/register_bank.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_Nx1 is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/register_bank.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_Nx1/Behavioral is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/register_bank.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
-WARNING:HDLParsers:3607 - Unit work/shift_rotate is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/shift_rotate.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
-WARNING:HDLParsers:3607 - Unit work/shift_rotate/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/shift_rotate.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_counter is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/stack_counter.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_counter/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/stack_counter.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_ram is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/stack_ram.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/stack_ram/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/stack_ram.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_x1s is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/stack_ram.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/ram_x1s/Behavioral is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/stack_ram.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
-WARNING:HDLParsers:3607 - Unit work/T_state_and_Reset is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/T_state_and_Reset.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
-WARNING:HDLParsers:3607 - Unit work/T_state_and_Reset/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/T_state_and_Reset.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
-WARNING:HDLParsers:3607 - Unit work/zero_flag_logic is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/zero_flag_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
-WARNING:HDLParsers:3607 - Unit work/zero_flag_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Borrar/P2b_Proyecto_Helloworld_RAM_INT/zero_flag_logic.vhd", and is now defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/toplevel is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
+WARNING:HDLParsers:3607 - Unit work/toplevel/behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
+WARNING:HDLParsers:3607 - Unit work/picoblaze is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
+WARNING:HDLParsers:3607 - Unit work/picoblaze/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
+WARNING:HDLParsers:3607 - Unit work/programa_helloworld_int_FLIP is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
+WARNING:HDLParsers:3607 - Unit work/programa_helloworld_int_FLIP/v1 is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
+WARNING:HDLParsers:3607 - Unit work/arithmetic_process is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
+WARNING:HDLParsers:3607 - Unit work/arithmetic_process/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
+WARNING:HDLParsers:3607 - Unit work/addsub8 is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
+WARNING:HDLParsers:3607 - Unit work/addsub8/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
+WARNING:HDLParsers:3607 - Unit work/carry_flag_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
+WARNING:HDLParsers:3607 - Unit work/carry_flag_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
+WARNING:HDLParsers:3607 - Unit work/flip is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
+WARNING:HDLParsers:3607 - Unit work/flip/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
+WARNING:HDLParsers:3607 - Unit work/interrupt_capture is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
+WARNING:HDLParsers:3607 - Unit work/interrupt_capture/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
+WARNING:HDLParsers:3607 - Unit work/interrupt_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
+WARNING:HDLParsers:3607 - Unit work/interrupt_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
+WARNING:HDLParsers:3607 - Unit work/IO_strobe_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
+WARNING:HDLParsers:3607 - Unit work/IO_strobe_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
+WARNING:HDLParsers:3607 - Unit work/logical_bus_processing is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
+WARNING:HDLParsers:3607 - Unit work/logical_bus_processing/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
+WARNING:HDLParsers:3607 - Unit work/program_counter is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/program_counter/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/register_and_flag_enable is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
+WARNING:HDLParsers:3607 - Unit work/register_and_flag_enable/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
+WARNING:HDLParsers:3607 - Unit work/register_bank is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
+WARNING:HDLParsers:3607 - Unit work/register_bank/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
+WARNING:HDLParsers:3607 - Unit work/ram_Nx1 is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
+WARNING:HDLParsers:3607 - Unit work/ram_Nx1/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_rotate is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
+WARNING:HDLParsers:3607 - Unit work/shift_rotate/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
+WARNING:HDLParsers:3607 - Unit work/stack_counter is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/stack_counter/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/stack_ram is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
+WARNING:HDLParsers:3607 - Unit work/stack_ram/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
+WARNING:HDLParsers:3607 - Unit work/ram_x1s is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
+WARNING:HDLParsers:3607 - Unit work/ram_x1s/Behavioral is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
+WARNING:HDLParsers:3607 - Unit work/T_state_and_Reset is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
+WARNING:HDLParsers:3607 - Unit work/T_state_and_Reset/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
+WARNING:HDLParsers:3607 - Unit work/zero_flag_logic is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
+WARNING:HDLParsers:3607 - Unit work/zero_flag_logic/low_level_definition is now defined in a different file.  It was defined in "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd", and is now defined in "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd" in Library work.
 Architecture low_level_definition of Entity io_strobe_logic is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd" in Library work.
 Architecture low_level_definition of Entity arithmetic_process is up to date.
 Architecture low_level_definition of Entity addsub8 is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd" in Library work.
 Architecture low_level_definition of Entity shift_rotate is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd" in Library work.
 Architecture low_level_definition of Entity flip is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd" in Library work.
 Architecture low_level_definition of Entity logical_bus_processing is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd" in Library work.
 Architecture low_level_definition of Entity t_state_and_reset is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd" in Library work.
 Architecture low_level_definition of Entity register_and_flag_enable is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd" in Library work.
 Architecture low_level_definition of Entity carry_flag_logic is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd" in Library work.
 Architecture low_level_definition of Entity zero_flag_logic is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd" in Library work.
 Architecture low_level_definition of Entity program_counter is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd" in Library work.
 Architecture behavioral of Entity register_bank is up to date.
 Architecture behavioral of Entity ram_nx1 is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd" in Library work.
 Architecture low_level_definition of Entity stack_ram is up to date.
 Architecture behavioral of Entity ram_x1s is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd" in Library work.
 Architecture low_level_definition of Entity stack_counter is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd" in Library work.
 Architecture low_level_definition of Entity interrupt_capture is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd" in Library work.
 Architecture low_level_definition of Entity interrupt_logic is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd" in Library work.
 Architecture behavioral of Entity picoblaze is up to date.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd" in Library work.
-Entity <programa_helloworld_int_flip> compiled.
-Entity <programa_helloworld_int_flip> (Architecture <v1>) compiled.
-Compiling vhdl file "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" in Library work.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd" in Library work.
+Architecture v1 of Entity programa_helloworld_int_flip is up to date.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/parity_unit.vhd" in Library work.
+Entity <parity_unit> compiled.
+Entity <parity_unit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" in Library work.
 Architecture behavioral of Entity toplevel is up to date.
 
 =========================================================================
@@ -195,6 +197,8 @@ Analyzing hierarchy for entity <toplevel> in library <work> (architecture <behav
 Analyzing hierarchy for entity <picoblaze> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <programa_helloworld_int_FLIP> in library <work> (architecture <v1>).
+
+Analyzing hierarchy for entity <parity_unit> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <IO_strobe_logic> in library <work> (architecture <low_level_definition>).
 
@@ -243,10 +247,6 @@ Analyzing hierarchy for entity <ram_x1s> in library <work> (architecture <behavi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <toplevel> in library <work> (Architecture <behavioral>).
-WARNING:Xst:790 - "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" line 131: Index value(s) does not match array range, simulation mismatch.
-INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:790 - "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" line 135: Index value(s) does not match array range, simulation mismatch.
-INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Entity <toplevel> analyzed. Unit <toplevel> generated.
 
 Analyzing Entity <picoblaze> in library <work> (Architecture <behavioral>).
@@ -315,6 +315,9 @@ Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
 Analyzing Entity <programa_helloworld_int_FLIP> in library <work> (Architecture <v1>).
 Entity <programa_helloworld_int_FLIP> analyzed. Unit <programa_helloworld_int_FLIP> generated.
 
+Analyzing Entity <parity_unit> in library <work> (Architecture <Behavioral>).
+Entity <parity_unit> analyzed. Unit <parity_unit> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -323,7 +326,7 @@ Entity <programa_helloworld_int_FLIP> analyzed. Unit <programa_helloworld_int_FL
 Performing bidirectional port resolution...
 
 Synthesizing Unit <programa_helloworld_int_FLIP>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
     Found 256x16-bit ROM for signal <dout$rom0000> created at line 282.
     Found 16-bit register for signal <dout>.
     Summary:
@@ -332,8 +335,16 @@ Synthesizing Unit <programa_helloworld_int_FLIP>.
 Unit <programa_helloworld_int_FLIP> synthesized.
 
 
+Synthesizing Unit <parity_unit>.
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/parity_unit.vhd".
+    Found 1-bit xor8 for signal <parity_bit>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <parity_unit> synthesized.
+
+
 Synthesizing Unit <IO_strobe_logic>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/IO_strobe_logic.vhd".
     Found 1-bit register for signal <read_strobe>.
     Found 1-bit register for signal <write_strobe>.
     Summary:
@@ -342,7 +353,7 @@ Unit <IO_strobe_logic> synthesized.
 
 
 Synthesizing Unit <shift_rotate>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/shift_rotate.vhd".
     Found 1-bit register for signal <carry_out>.
     Found 8-bit register for signal <Y>.
     Summary:
@@ -351,7 +362,7 @@ Unit <shift_rotate> synthesized.
 
 
 Synthesizing Unit <flip>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd".
     Found 8-bit register for signal <Y>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -359,7 +370,7 @@ Unit <flip> synthesized.
 
 
 Synthesizing Unit <logical_bus_processing>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd".
 WARNING:Xst:646 - Signal <sel> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 8-bit register for signal <Y>.
     Found 1-bit xor2 for signal <combinatorial_logical_processing_0$xor0000> created at line 44.
@@ -376,7 +387,7 @@ Unit <logical_bus_processing> synthesized.
 
 
 Synthesizing Unit <T_state_and_Reset>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd".
     Found 1-bit register for signal <internal_T_state>.
     Found 1-bit register for signal <reset_delay1>.
     Found 1-bit register for signal <reset_delay2>.
@@ -386,7 +397,7 @@ Unit <T_state_and_Reset> synthesized.
 
 
 Synthesizing Unit <register_and_flag_enable>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd".
     Found 1-bit register for signal <arith_or_logical_valid>.
     Found 1-bit register for signal <register_write_valid>.
     Found 1-bit register for signal <returni_or_shift_valid>.
@@ -396,7 +407,7 @@ Unit <register_and_flag_enable> synthesized.
 
 
 Synthesizing Unit <carry_flag_logic>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd".
     Found 1-bit register for signal <carry_flag>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -404,7 +415,7 @@ Unit <carry_flag_logic> synthesized.
 
 
 Synthesizing Unit <zero_flag_logic>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd".
     Found 1-bit register for signal <zero_flag>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -412,7 +423,7 @@ Unit <zero_flag_logic> synthesized.
 
 
 Synthesizing Unit <program_counter>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/program_counter.vhd".
     Found 8-bit register for signal <count_value>.
     Found 8-bit adder for signal <count_value$share0000> created at line 57.
     Summary:
@@ -422,7 +433,7 @@ Unit <program_counter> synthesized.
 
 
 Synthesizing Unit <stack_counter>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_counter.vhd".
     Found 2-bit register for signal <count_value>.
     Found 1-bit xor2 for signal <next_count<1>>.
     Summary:
@@ -431,7 +442,7 @@ Unit <stack_counter> synthesized.
 
 
 Synthesizing Unit <interrupt_capture>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_capture.vhd".
     Found 1-bit register for signal <active_interrupt_pulse>.
     Found 1-bit register for signal <clean_interrupt>.
     Summary:
@@ -440,7 +451,7 @@ Unit <interrupt_capture> synthesized.
 
 
 Synthesizing Unit <interrupt_logic>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd".
     Found 1-bit register for signal <shaddow_carry>.
     Found 1-bit register for signal <shaddow_zero>.
     Found 1-bit register for signal <interrupt_enable>.
@@ -450,7 +461,7 @@ Unit <interrupt_logic> synthesized.
 
 
 Synthesizing Unit <addsub8>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
     Found 8-bit register for signal <Y>.
     Found 8-bit xor2 for signal <full_addsub>.
     Summary:
@@ -459,7 +470,7 @@ Unit <addsub8> synthesized.
 
 
 Synthesizing Unit <ram_Nx1>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
     Found 1-bit 8-to-1 multiplexer for signal <spo>.
     Found 1-bit 8-to-1 multiplexer for signal <dpo>.
     Found 8-bit register for signal <rambit>.
@@ -470,7 +481,7 @@ Unit <ram_Nx1> synthesized.
 
 
 Synthesizing Unit <ram_x1s>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
     Found 1-bit 4-to-1 multiplexer for signal <o>.
     Found 4-bit register for signal <rambit>.
     Summary:
@@ -480,7 +491,7 @@ Unit <ram_x1s> synthesized.
 
 
 Synthesizing Unit <arithmetic_process>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/arithmatic.vhd".
     Found 1-bit register for signal <carry_out>.
     Found 1-bit xor2 for signal <modified_carry_out>.
     Summary:
@@ -489,12 +500,12 @@ Unit <arithmetic_process> synthesized.
 
 
 Synthesizing Unit <register_bank>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_bank.vhd".
 Unit <register_bank> synthesized.
 
 
 Synthesizing Unit <stack_ram>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd".
     Found 8-bit register for signal <Dout>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -502,19 +513,20 @@ Unit <stack_ram> synthesized.
 
 
 Synthesizing Unit <picoblaze>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd".
 Unit <picoblaze> synthesized.
 
 
 Synthesizing Unit <toplevel>.
-    Related source file is "C:/Xilinx/Practicas_4AHC/Practica2_Picoblaze/P2c_Picoblaze_Helloworld_RAM_INT_FLIP/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd".
     Found 64x8-bit single-port RAM <Mram_RAM> for signal <RAM>.
     Found 1-bit register for signal <tx>.
-    Found 8-bit comparator less for signal <inport$cmp_lt0000> created at line 138.
+    Found 8-bit comparator less for signal <inport$cmp_lt0000> created at line 170.
+    Found 8-bit register for signal <parity_data_in>.
     Found 8-bit register for signal <rxbuff_out>.
     Summary:
 	inferred   1 RAM(s).
-	inferred   9 D-type flip-flop(s).
+	inferred  17 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <toplevel> synthesized.
 
@@ -530,17 +542,18 @@ Macro Statistics
  256x16-bit ROM                                        : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Registers                                            : 159
+# Registers                                            : 160
  1-bit register                                        : 156
  16-bit register                                       : 1
- 8-bit register                                        : 2
+ 8-bit register                                        : 3
 # Comparators                                          : 1
  8-bit comparator less                                 : 1
 # Multiplexers                                         : 24
  1-bit 4-to-1 multiplexer                              : 8
  1-bit 8-to-1 multiplexer                              : 16
-# Xors                                                 : 18
+# Xors                                                 : 19
  1-bit xor2                                            : 18
+ 1-bit xor8                                            : 1
 
 =========================================================================
 
@@ -592,15 +605,16 @@ Macro Statistics
  64x8-bit single-port distributed RAM                  : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Registers                                            : 172
- Flip-Flops                                            : 172
+# Registers                                            : 180
+ Flip-Flops                                            : 180
 # Comparators                                          : 1
  8-bit comparator less                                 : 1
 # Multiplexers                                         : 24
  1-bit 4-to-1 multiplexer                              : 8
  1-bit 8-to-1 multiplexer                              : 16
-# Xors                                                 : 18
+# Xors                                                 : 19
  1-bit xor2                                            : 18
+ 1-bit xor8                                            : 1
 
 =========================================================================
 
@@ -635,7 +649,7 @@ Optimizing unit <picoblaze> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 4.
 
 Final Macro Processing ...
 
@@ -643,8 +657,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 166
- Flip-Flops                                            : 166
+# Registers                                            : 174
+ Flip-Flops                                            : 174
 
 =========================================================================
 
@@ -673,23 +687,23 @@ Design Statistics
 # IOs                              : 31
 
 Cell Usage :
-# BELS                             : 370
+# BELS                             : 382
 #      GND                         : 1
 #      INV                         : 3
-#      LUT2                        : 7
-#      LUT2_D                      : 1
-#      LUT3                        : 146
-#      LUT3_D                      : 9
-#      LUT3_L                      : 12
-#      LUT4                        : 104
-#      LUT4_D                      : 9
-#      LUT4_L                      : 6
-#      MUXF5                       : 56
+#      LUT2                        : 8
+#      LUT2_L                      : 1
+#      LUT3                        : 140
+#      LUT3_D                      : 8
+#      LUT3_L                      : 8
+#      LUT4                        : 111
+#      LUT4_D                      : 22
+#      LUT4_L                      : 13
+#      MUXF5                       : 51
 #      MUXF6                       : 15
 #      VCC                         : 1
-# FlipFlops/Latches                : 166
+# FlipFlops/Latches                : 174
 #      FD                          : 43
-#      FDCE                        : 2
+#      FDCE                        : 10
 #      FDE                         : 98
 #      FDPE                        : 3
 #      FDR                         : 6
@@ -711,10 +725,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      190  out of   4656     4%  
- Number of Slice Flip Flops:            166  out of   9312     1%  
- Number of 4 input LUTs:                329  out of   9312     3%  
-    Number used as logic:               297
+ Number of Slices:                      197  out of   4656     4%  
+ Number of Slice Flip Flops:            174  out of   9312     1%  
+ Number of 4 input LUTs:                346  out of   9312     3%  
+    Number used as logic:               314
     Number used as RAMs:                 32
  Number of IOs:                          31
  Number of bonded IOBs:                  31  out of    232    13%  
@@ -742,7 +756,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 183   |
+clk                                | BUFGP                  | 191   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -750,7 +764,7 @@ Asynchronous Control Signals Information:
 ----------------------------------------------------------------------------+--------------------------------------------+-------+
 Control Signal                                                              | Buffer(FF name)                            | Load  |
 ----------------------------------------------------------------------------+--------------------------------------------+-------+
-reset                                                                       | IBUF                                       | 3     |
+reset                                                                       | IBUF                                       | 11    |
 processor/basic_control/reset_delay2(processor/basic_control/reset_delay2:Q)| NONE(processor/stack_control/count_value_0)| 2     |
 ----------------------------------------------------------------------------+--------------------------------------------+-------+
 
@@ -758,10 +772,10 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 15.842ns (Maximum Frequency: 63.124MHz)
+   Minimum period: 14.580ns (Maximum Frequency: 68.587MHz)
    Minimum input arrival time before clock: 3.097ns
-   Maximum output required time after clock: 15.309ns
-   Maximum combinational path delay: 5.159ns
+   Maximum output required time after clock: 15.502ns
+   Maximum combinational path delay: 5.490ns
 
 Timing Detail:
 --------------
@@ -769,10 +783,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 15.842ns (frequency: 63.124MHz)
-  Total number of paths / destination ports: 36444 / 415
+  Clock period: 14.580ns (frequency: 68.587MHz)
+  Total number of paths / destination ports: 38308 / 431
 -------------------------------------------------------------------------
-Delay:               15.842ns (Levels of Logic = 10)
+Delay:               14.580ns (Levels of Logic = 9)
   Source:            program/Mrom_dout_rom0000 (RAM)
   Destination:       processor/zero_logic/zero_flag (FF)
   Source Clock:      clk rising
@@ -782,21 +796,20 @@ Delay:               15.842ns (Levels of Logic = 10)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S18:CLK->DO5   34   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
-     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_6)
-     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_4_f5)
-     MUXF6:I0->O           2   0.521   0.482  processor/data_registers/bus_width_loop[4].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<4>)
-     LUT3:I2->O           13   0.704   1.158  processor/second_operand<4>1_1 (processor/second_operand<4>1)
-     LUT4:I0->O            3   0.704   0.566  inport<0>114 (inport<0>114)
-     LUT3:I2->O           10   0.704   0.886  inport<0>12 (rxbuff_out_and0000)
-     LUT4:I3->O            2   0.704   0.451  inport<3> (in_port_3_OBUF)
-     LUT4:I3->O            9   0.704   0.995  processor/ALU_result_3_or000038 (processor/ALU_result<3>)
+     RAMB16_S18:CLK->DO5   35   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
+     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6)
+     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5)
+     MUXF6:I0->O           2   0.521   0.482  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<1>)
+     LUT3:I2->O           75   0.704   1.276  processor/second_operand<1>1 (port_id_1_OBUF)
+     RAM32X1S:A1->O        1   1.025   0.455  Mram_RAM9 (N20)
+     LUT4:I2->O            2   0.704   0.451  inport<4>13 (inport<4>13)
+     LUT4:I3->O            9   0.704   0.995  processor/ALU_result_4_or000038 (processor/ALU_result<4>)
      LUT4:I0->O            1   0.704   0.424  processor/zero_logic/next_zero_flag33 (processor/zero_logic/next_zero_flag33)
      LUT4:I3->O            1   0.704   0.000  processor/zero_logic/next_zero_flag49 (processor/zero_logic/next_zero_flag)
      FDRE:D                    0.308          processor/zero_logic/zero_flag
     ----------------------------------------
-    Total                     15.842ns (9.582ns logic, 6.260ns route)
-                                       (60.5% logic, 39.5% route)
+    Total                     14.580ns (9.199ns logic, 5.381ns route)
+                                       (63.1% logic, 36.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -822,33 +835,33 @@ Offset:              3.097ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 3138 / 27
 -------------------------------------------------------------------------
-Offset:              15.309ns (Levels of Logic = 8)
+Offset:              15.502ns (Levels of Logic = 8)
   Source:            program/Mrom_dout_rom0000 (RAM)
-  Destination:       in_port<0> (PAD)
+  Destination:       in_port<7> (PAD)
   Source Clock:      clk rising
 
-  Data Path: program/Mrom_dout_rom0000 to in_port<0>
+  Data Path: program/Mrom_dout_rom0000 to in_port<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16_S18:CLK->DO5   34   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
-     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_6)
-     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_4_f5)
-     MUXF6:I0->O           4   0.521   0.622  processor/data_registers/bus_width_loop[1].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<1>)
-     LUT3:I2->O           22   0.704   1.164  processor/second_operand<1>1 (port_id_1_OBUF)
-     RAM32X1S:A1->O        1   1.025   0.455  Mram_RAM1 (N4)
-     LUT4_D:I2->O          1   0.704   0.595  inport<0>13 (inport<0>13)
-     LUT3:I0->O            1   0.704   0.420  inport<0>15 (in_port_0_OBUF)
-     OBUF:I->O                 3.272          in_port_0_OBUF (in_port<0>)
+     RAMB16_S18:CLK->DO5   35   2.800   1.298  program/Mrom_dout_rom0000 (instruction<5>)
+     LUT3:I2->O            1   0.704   0.000  processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_6 (processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_6)
+     MUXF5:I0->O           1   0.321   0.000  processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_4_f5 (processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_4_f5)
+     MUXF6:I0->O           1   0.521   0.455  processor/data_registers/bus_width_loop[0].data_register_bit/Mmux_dpo_2_f6 (processor/sY_register<0>)
+     LUT3:I2->O           72   0.704   1.279  processor/second_operand<0>1 (port_id_0_OBUF)
+     LUT4:I3->O            8   0.704   0.761  inport<0>4_SW1 (N38)
+     LUT4:I3->O            9   0.704   0.855  inport<7>11 (rxbuff_out_and0000)
+     LUT3:I2->O            1   0.704   0.420  inport<7>15 (in_port_7_OBUF)
+     OBUF:I->O                 3.272          in_port_7_OBUF (in_port<7>)
     ----------------------------------------
-    Total                     15.309ns (10.755ns logic, 4.554ns route)
-                                       (70.3% logic, 29.7% route)
+    Total                     15.502ns (10.434ns logic, 5.068ns route)
+                                       (67.3% logic, 32.7% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               5.159ns (Levels of Logic = 2)
+Delay:               5.490ns (Levels of Logic = 2)
   Source:            reset (PAD)
   Destination:       LED (PAD)
 
@@ -856,23 +869,23 @@ Delay:               5.159ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             6   1.218   0.669  reset_IBUF (LED_OBUF)
+     IBUF:I->O            14   1.218   1.000  reset_IBUF (LED_OBUF)
      OBUF:I->O                 3.272          LED_OBUF (LED)
     ----------------------------------------
-    Total                      5.159ns (4.490ns logic, 0.669ns route)
-                                       (87.0% logic, 13.0% route)
+    Total                      5.490ns (4.490ns logic, 1.000ns route)
+                                       (81.8% logic, 18.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.35 secs
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.27 secs
  
 --> 
 
-Total memory usage is 4531272 kilobytes
+Total memory usage is 4532596 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 
