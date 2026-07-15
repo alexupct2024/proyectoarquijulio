@@ -19,6 +19,7 @@ entity register_and_flag_enable is
 	 		 i_arithmetic: in std_logic;
 			 i_shift_rotate: in std_logic;
 			 i_flip: in std_logic;				 -- added new instruction
+       i_swap: in std_logic;        -- nueva instruccion SWAP
 			 i_returni: in std_logic;
 			 i_input: in std_logic;
           active_interrupt : in std_logic;
@@ -38,6 +39,7 @@ signal returni_or_shift_decode : std_logic;
 signal returni_or_shift_valid  : std_logic;
 signal arith_or_logical_decode : std_logic;
 signal arith_or_logical_valid  : std_logic;
+signal i_swap : std_logic;
 --
 begin
   --
@@ -45,8 +47,9 @@ begin
   --
   -- added new instruction, uncomment this instruction and comment next instruction
   -- to enable the new instruction
-   reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input or i_flip) 
-  								and (not active_interrupt);
+  reg_instruction_decode <=
+    (i_logical or i_arithmetic or i_shift_rotate or i_input or i_flip or i_swap)
+    and (not active_interrupt);
 
   --reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input) 
   	--							and (not active_interrupt);
