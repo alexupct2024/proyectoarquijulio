@@ -203,6 +203,7 @@ component register_and_flag_enable
 			 i_flip: in std_logic;					-- added new instruction
 			 i_returni: in std_logic;
 			 i_input: in std_logic;
+             i_swap: in std_logic;      
           active_interrupt : in std_logic;
           T_state : in std_logic;
           register_enable : out std_logic;
@@ -367,6 +368,7 @@ signal i_output : std_logic;
 
 -- added new instruction
 signal i_flip : std_logic;
+signal i_swap : std_logic;
 
 
 signal conditional : std_logic;
