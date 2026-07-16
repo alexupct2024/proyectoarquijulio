@@ -22,12 +22,7 @@
 		NAMEREG		s4, cont1		;contador de retardo1
 		NAMEREG		s5, cont2		;contador de retardo2
 		;
-		ADDRESS		00			;el programa se cargara a partir de la dir 00
-		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-            	;Inicio del programa
-            	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-		DISABLE INTERRUPT
-start:		CALL		recibe
+
 
 ADDRESS 00
 
