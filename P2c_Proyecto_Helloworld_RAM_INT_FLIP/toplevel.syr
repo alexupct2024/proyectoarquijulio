@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Reading design: toplevel.prj
 
@@ -114,8 +114,7 @@ Architecture low_level_definition of Entity shift_rotate is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd" in Library work.
 Architecture low_level_definition of Entity flip is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/swap.vhd" in Library work.
-Entity <swap> compiled.
-Entity <swap> (Architecture <low_level_definition>) compiled.
+Architecture low_level_definition of Entity swap is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd" in Library work.
 Architecture low_level_definition of Entity logical_bus_processing is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd" in Library work.
@@ -141,10 +140,10 @@ Architecture low_level_definition of Entity interrupt_capture is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd" in Library work.
 Architecture low_level_definition of Entity interrupt_logic is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd" in Library work.
-Entity <picoblaze> compiled.
-Entity <picoblaze> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity picoblaze is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd" in Library work.
-Architecture v1 of Entity programa_helloworld_int_flip is up to date.
+Entity <programa_helloworld_int_flip> compiled.
+Entity <programa_helloworld_int_flip> (Architecture <v1>) compiled.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/parity_unit.vhd" in Library work.
 Architecture behavioral of Entity parity_unit is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" in Library work.
@@ -861,12 +860,12 @@ Delay:               5.490ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.64 secs
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 30.30 secs
  
 --> 
 
-Total memory usage is 4548124 kilobytes
+Total memory usage is 4579548 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
