@@ -22,12 +22,6 @@
 		NAMEREG		s4, cont1		;contador de retardo1
 		NAMEREG		s5, cont2		;contador de retardo2
 		;
-		ADDRESS		00			;el programa se cargara a partir de la dir 00
-		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-            	;Inicio del programa
-            	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-		DISABLE INTERRUPT
-start:		CALL		recibe
 
 ADDRESS 00
 
@@ -36,16 +30,10 @@ DISABLE INTERRUPT
 start:
         CALL recibe
 
-        ; Enviar el caracter recibido al periferico
-        OUTPUT rxreg, parity_data
+        LOAD s0, rxreg
+        SWAP s0
+        LOAD txreg, s0
 
-        ; Leer el resultado: 00 si es par, 01 si es impar
-        INPUT txreg, parity_result
-
-        ; Convertir 00/01 en ASCII '0'/'1'
-        ADD txreg, 30
-
-        ; Mostrar el resultado por RS-232
         CALL transmite
 
         JUMP start
