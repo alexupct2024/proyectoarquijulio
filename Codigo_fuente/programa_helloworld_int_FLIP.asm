@@ -28,15 +28,13 @@ ADDRESS 00
 DISABLE INTERRUPT
 
 start:
-        CALL recibe
-
-        LOAD s0, rxreg
+        LOAD s0, 43
         SWAP s0
         LOAD txreg, s0
-
         CALL transmite
 
-        JUMP start
+fin:
+        JUMP fin
 		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
             	;Rutina de recepcion de caracteres
             	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
