@@ -165,7 +165,7 @@ char *instruction_set[] = {
 	"NAMEREG",	/* 27 */
 	"ADDRESS",	/* 28 */
 	"FLIP",	/* 29 */
-	"MASK"};	/* 30 */
+	"MASK"};	/* 30 */ /* added new instruction */
 
 int error = 0;
 /*====================================== */
@@ -432,7 +432,7 @@ void test_instructions(void)
 				case 18: /* SLX */
 				case 19: /* SLA */
 				case 20: /* RL */
-				case 29: /* FLIP */
+				case 29: /* FLIP */ /* added new instruction, same syntax with shift/rotate */
 				case 30: /* MASK */
 					if(op[i].op2 != NULL){
 						printf("ERROR - Too many Operands for %s on line %d\n", op[i].instruction, i+1);
@@ -786,7 +786,7 @@ void write_program_word(void)                                                   
 						fprintf(ofp,"ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
 						error++;
 					}
-					break;
+
 				case 30: /* MASK */
 					insert_instruction(mask_id, op[i].address);
 					if((reg_n = find_namereg(op[i].op1)) != -1)
@@ -798,6 +798,7 @@ void write_program_word(void)                                                   
 						fprintf(ofp,"ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
 						error++;
 					}
+					break;
 					break;
 			}
 		}

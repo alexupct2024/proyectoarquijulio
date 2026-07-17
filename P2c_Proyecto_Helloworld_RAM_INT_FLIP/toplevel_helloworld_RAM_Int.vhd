@@ -35,7 +35,7 @@ architecture behavioral of toplevel is
 -----------------------------------------------------------------
 -- declaraci�n de la ROM de programa
 -----------------------------------------------------------------
-  component programa_helloworld_int_FLIP
+  component programa_helloworld_int_MASK_PARIDAD
     Port (      address : in std_logic_vector(7 downto 0);
             		   dout : out std_logic_vector(15 downto 0);
                     clk : in std_logic);
@@ -106,7 +106,7 @@ begin
                      reset => reset,
                        clk => clk);
 
-  program: programa_helloworld_int_FLIP
+  program: programa_helloworld_int_MASK_PARIDAD
     port map(     address => address,
                	     dout => instruction,
                       clk => clk);

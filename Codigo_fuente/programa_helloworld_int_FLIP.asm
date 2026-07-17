@@ -28,19 +28,25 @@ ADDRESS 00
 
 DISABLE INTERRUPT
 
-start:		CALL		recibe
-		LOAD		s0, rxreg
-		MASK		s0
-		OUTPUT		s0, FD
-		INPUT		s0, FE
-		ADD		s0, 30
-		LOAD		txreg, s0
-		CALL		transmite
-		JUMP		start
+start:
+        CALL recibe
 
+        ; Enviar el caracter recibido al periferico
+        OUTPUT rxreg, parity_data
+
+        ; Leer el resultado: 00 si es par, 01 si es impar
+        INPUT txreg, parity_result
+
+        ; Convertir 00/01 en ASCII '0'/'1'
+        ADD txreg, 30
+
+        ; Mostrar el resultado por RS-232
+        CALL transmite
+
+        JUMP start
 		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-		; Rutina de recepcion de caracteres
-		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+            	;Rutina de recepcion de caracteres
+            	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 recibe:		;esperamos a que se reciba un bit de inicio
 		INPUT		rxreg, rs232
 		AND		rxreg, 80

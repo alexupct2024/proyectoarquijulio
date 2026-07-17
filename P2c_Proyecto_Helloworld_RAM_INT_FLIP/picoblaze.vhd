@@ -88,8 +88,6 @@ constant shift_rotate_id : std_logic_vector(4 downto 0) := "10100";
 -- added new instruction
 -- flip
 constant flip_id : std_logic_vector(4 downto 0) := "11111";
-
--- MASK: pone a cero los 4 bits mas significativos
 constant mask_id : std_logic_vector(4 downto 0) := "11101";
 --
 -- input/output group
@@ -167,12 +165,11 @@ component flip
           clk : in std_logic);
     end component;
 
--- Definition of MASK process
 component mask
     Port (operand : in std_logic_vector(7 downto 0);
           Y : out std_logic_vector(7 downto 0);
           clk : in std_logic);
-end component;
+    end component;
 --
 -- Definition of an 8-bit logical processing unit
 --
@@ -202,7 +199,7 @@ component register_and_flag_enable
 	 		 i_arithmetic: in std_logic;
 			 i_shift_rotate: in std_logic;
 			 i_flip: in std_logic;					-- added new instruction
-			 i_mask: in std_logic;					-- MASK instruction
+			 i_mask: in std_logic;
 			 i_returni: in std_logic;
 			 i_input: in std_logic;
           active_interrupt : in std_logic;
@@ -483,9 +480,9 @@ begin
             clk => clk);
 
   mask_group: mask
-    port map(operand => first_operand,
-             Y => mask_result,
-             clk => clk);
+  port map (operand => sX_register,
+            Y => mask_result,
+            clk => clk);
 
    logical_group: logical_bus_processing
    port map (first_operand => sX_register,
@@ -509,7 +506,7 @@ begin
 	 		    i_arithmetic => i_arithmetic,
 			 	 i_shift_rotate => i_shift_rotate,
 				 i_flip => i_flip,		  -- added new instruction
-				 i_mask => i_mask,		  -- MASK instruction
+				 i_mask => i_mask,
 			 	 i_returni => i_returni,
 				 i_input => i_input,
           	 active_interrupt => active_interrupt,
@@ -695,7 +692,7 @@ begin
 							or (in_port(i) and i_input)
 							or (arithmetic_result(i) and i_arithmetic)
 							or (flip_result(i) and i_flip)		-- added new instruction
-							or (mask_result(i) and i_mask)		-- MASK instruction
+							or (mask_result(i) and i_mask)
 							or (logical_result(i) and i_logical);
 	end generate ALU_loop;
 

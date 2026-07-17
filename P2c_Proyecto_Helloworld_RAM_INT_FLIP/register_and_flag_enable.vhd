@@ -18,8 +18,8 @@ entity register_and_flag_enable is
     Port (i_logical: in std_logic;
 	 		 i_arithmetic: in std_logic;
 			 i_shift_rotate: in std_logic;
-			 i_flip: in std_logic;
-			 i_mask: in std_logic;				 -- added new instruction
+			 i_flip: in std_logic;				 -- added new instruction
+			 i_mask: in std_logic;
 			 i_returni: in std_logic;
 			 i_input: in std_logic;
           active_interrupt : in std_logic;

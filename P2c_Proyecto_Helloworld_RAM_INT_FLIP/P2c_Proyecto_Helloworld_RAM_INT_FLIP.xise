@@ -88,9 +88,9 @@
     </file>
     <file xil_pn:name="mask.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="7"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
-    <file xil_pn:name="programa_helloworld_int_FLIP.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="programa_helloworld_int_MASK_PARIDAD.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="69"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="16"/>
     </file>

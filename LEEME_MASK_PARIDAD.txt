@@ -1,0 +1,13 @@
+PROYECTO CORREGIDO: PARIDAD + INSTRUCCION MASK
+
+Se ha partido del ZIP original del usuario.
+MASK usa el opcode 11101 y se conecta con operand => sX_register.
+No se utiliza ninguna señal first_operand en la instancia de MASK.
+
+Programa cargado en la ROM:
+1. Recibe un caracter por RS-232.
+2. Ejecuta MASK rxreg (conserva los 4 bits menos significativos).
+3. Envia el resultado al periferico de paridad.
+4. Transmite por RS-232 '0' si la paridad es par y '1' si es impar.
+
+En ISE ejecutar: Synthesize, Implement Design y Generate Programming File.
