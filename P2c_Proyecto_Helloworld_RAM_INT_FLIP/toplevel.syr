@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: toplevel.prj
 
@@ -113,12 +113,16 @@ Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2
 Architecture low_level_definition of Entity shift_rotate is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/flip.vhd" in Library work.
 Architecture low_level_definition of Entity flip is up to date.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/mask.vhd" in Library work.
+Entity <mask> compiled.
+Entity <mask> (Architecture <low_level_definition>) compiled.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/logical_bus_processing.vhd" in Library work.
 Architecture low_level_definition of Entity logical_bus_processing is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/T_state_and_Reset.vhd" in Library work.
 Architecture low_level_definition of Entity t_state_and_reset is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/register_and_flag_enable.vhd" in Library work.
-Architecture low_level_definition of Entity register_and_flag_enable is up to date.
+Entity <register_and_flag_enable> compiled.
+Entity <register_and_flag_enable> (Architecture <low_level_definition>) compiled.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/carry_flag_logic.vhd" in Library work.
 Architecture low_level_definition of Entity carry_flag_logic is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/zero_flag_logic.vhd" in Library work.
@@ -138,14 +142,16 @@ Architecture low_level_definition of Entity interrupt_capture is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/interrupt_logic.vhd" in Library work.
 Architecture low_level_definition of Entity interrupt_logic is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/picoblaze.vhd" in Library work.
-Architecture behavioral of Entity picoblaze is up to date.
-Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd" in Library work.
-Architecture v1 of Entity programa_helloworld_int_flip is up to date.
+Entity <picoblaze> compiled.
+Entity <picoblaze> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_MASK_PARIDAD.vhd" in Library work.
+Entity <programa_helloworld_int_MASK_PARIDAD> compiled.
+Entity <programa_helloworld_int_MASK_PARIDAD> (Architecture <v1>) compiled.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/parity_unit.vhd" in Library work.
-Entity <parity_unit> compiled.
-Entity <parity_unit> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity parity_unit is up to date.
 Compiling vhdl file "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd" in Library work.
-Architecture behavioral of Entity toplevel is up to date.
+Entity <toplevel> compiled.
+Entity <toplevel> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -154,7 +160,7 @@ Analyzing hierarchy for entity <toplevel> in library <work> (architecture <behav
 
 Analyzing hierarchy for entity <picoblaze> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <programa_helloworld_int_FLIP> in library <work> (architecture <v1>).
+Analyzing hierarchy for entity <programa_helloworld_int_MASK_PARIDAD> in library <work> (architecture <v1>).
 
 Analyzing hierarchy for entity <parity_unit> in library <work> (architecture <behavioral>).
 
@@ -165,6 +171,8 @@ Analyzing hierarchy for entity <arithmetic_process> in library <work> (architect
 Analyzing hierarchy for entity <shift_rotate> in library <work> (architecture <low_level_definition>).
 
 Analyzing hierarchy for entity <flip> in library <work> (architecture <low_level_definition>).
+
+Analyzing hierarchy for entity <mask> in library <work> (architecture <low_level_definition>).
 
 Analyzing hierarchy for entity <logical_bus_processing> in library <work> (architecture <low_level_definition>).
 
@@ -225,6 +233,13 @@ Entity <shift_rotate> analyzed. Unit <shift_rotate> generated.
 Analyzing Entity <flip> in library <work> (Architecture <low_level_definition>).
 Entity <flip> analyzed. Unit <flip> generated.
 
+Analyzing Entity <mask> in library <work> (Architecture <low_level_definition>).
+INFO:Xst:2679 - Register <Y<7>> in unit <mask> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Y<6>> in unit <mask> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Y<5>> in unit <mask> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Y<4>> in unit <mask> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <mask> analyzed. Unit <mask> generated.
+
 Analyzing Entity <logical_bus_processing> in library <work> (Architecture <low_level_definition>).
 Entity <logical_bus_processing> analyzed. Unit <logical_bus_processing> generated.
 
@@ -270,8 +285,8 @@ Entity <interrupt_capture> analyzed. Unit <interrupt_capture> generated.
 Analyzing Entity <interrupt_logic> in library <work> (Architecture <low_level_definition>).
 Entity <interrupt_logic> analyzed. Unit <interrupt_logic> generated.
 
-Analyzing Entity <programa_helloworld_int_FLIP> in library <work> (Architecture <v1>).
-Entity <programa_helloworld_int_FLIP> analyzed. Unit <programa_helloworld_int_FLIP> generated.
+Analyzing Entity <programa_helloworld_int_MASK_PARIDAD> in library <work> (Architecture <v1>).
+Entity <programa_helloworld_int_MASK_PARIDAD> analyzed. Unit <programa_helloworld_int_MASK_PARIDAD> generated.
 
 Analyzing Entity <parity_unit> in library <work> (Architecture <behavioral>).
 Entity <parity_unit> analyzed. Unit <parity_unit> generated.
@@ -283,14 +298,14 @@ Entity <parity_unit> analyzed. Unit <parity_unit> generated.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <programa_helloworld_int_FLIP>.
-    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_FLIP.vhd".
+Synthesizing Unit <programa_helloworld_int_MASK_PARIDAD>.
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/programa_helloworld_int_MASK_PARIDAD.vhd".
     Found 256x16-bit ROM for signal <dout$rom0000> created at line 282.
     Found 16-bit register for signal <dout>.
     Summary:
 	inferred   1 ROM(s).
 	inferred  16 D-type flip-flop(s).
-Unit <programa_helloworld_int_FLIP> synthesized.
+Unit <programa_helloworld_int_MASK_PARIDAD> synthesized.
 
 
 Synthesizing Unit <parity_unit>.
@@ -325,6 +340,15 @@ Synthesizing Unit <flip>.
     Summary:
 	inferred   8 D-type flip-flop(s).
 Unit <flip> synthesized.
+
+
+Synthesizing Unit <mask>.
+    Related source file is "C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/mask.vhd".
+WARNING:Xst:647 - Input <operand<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <Y<3:0>>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <mask> synthesized.
 
 
 Synthesizing Unit <logical_bus_processing>.
@@ -500,8 +524,8 @@ Macro Statistics
  256x16-bit ROM                                        : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Registers                                            : 160
- 1-bit register                                        : 156
+# Registers                                            : 164
+ 1-bit register                                        : 160
  16-bit register                                       : 1
  8-bit register                                        : 3
 # Comparators                                          : 1
@@ -520,7 +544,7 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <programa_helloworld_int_FLIP>.
+Synthesizing (advanced) Unit <programa_helloworld_int_MASK_PARIDAD>.
 INFO:Xst:3044 - The ROM <Mrom_dout_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <dout>.
 INFO:Xst:3225 - The RAM <Mrom_dout_rom0000> will be implemented as BLOCK RAM
     -----------------------------------------------------------------------
@@ -537,7 +561,7 @@ INFO:Xst:3225 - The RAM <Mrom_dout_rom0000> will be implemented as BLOCK RAM
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-Unit <programa_helloworld_int_FLIP> synthesized (advanced).
+Unit <programa_helloworld_int_MASK_PARIDAD> synthesized (advanced).
 
 Synthesizing (advanced) Unit <toplevel>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -563,8 +587,8 @@ Macro Statistics
  64x8-bit single-port distributed RAM                  : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Registers                                            : 180
- Flip-Flops                                            : 180
+# Registers                                            : 184
+ Flip-Flops                                            : 184
 # Comparators                                          : 1
  8-bit comparator less                                 : 1
 # Multiplexers                                         : 24
@@ -607,6 +631,10 @@ Optimizing unit <picoblaze> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <processor/flip_group/Y_5> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/mask_group/Y_2> 
+INFO:Xst:2261 - The FF/Latch <processor/flip_group/Y_4> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/mask_group/Y_3> 
+INFO:Xst:2261 - The FF/Latch <processor/flip_group/Y_7> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/mask_group/Y_0> 
+INFO:Xst:2261 - The FF/Latch <processor/flip_group/Y_6> in Unit <toplevel> is equivalent to the following FF/Latch, which will be removed : <processor/mask_group/Y_1> 
 Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 4.
 
 Final Macro Processing ...
@@ -645,18 +673,18 @@ Design Statistics
 # IOs                              : 31
 
 Cell Usage :
-# BELS                             : 382
+# BELS                             : 391
 #      GND                         : 1
 #      INV                         : 3
-#      LUT2                        : 8
+#      LUT2                        : 15
 #      LUT2_L                      : 1
-#      LUT3                        : 140
-#      LUT3_D                      : 8
-#      LUT3_L                      : 8
-#      LUT4                        : 111
-#      LUT4_D                      : 22
+#      LUT3                        : 132
+#      LUT3_D                      : 7
+#      LUT3_L                      : 10
+#      LUT4                        : 118
+#      LUT4_D                      : 25
 #      LUT4_L                      : 13
-#      MUXF5                       : 51
+#      MUXF5                       : 50
 #      MUXF6                       : 15
 #      VCC                         : 1
 # FlipFlops/Latches                : 174
@@ -685,8 +713,8 @@ Selected Device : 3s500efg320-4
 
  Number of Slices:                      197  out of   4656     4%  
  Number of Slice Flip Flops:            174  out of   9312     1%  
- Number of 4 input LUTs:                346  out of   9312     3%  
-    Number used as logic:               314
+ Number of 4 input LUTs:                356  out of   9312     3%  
+    Number used as logic:               324
     Number used as RAMs:                 32
  Number of IOs:                          31
  Number of bonded IOBs:                  31  out of    232    13%  
@@ -742,7 +770,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 14.580ns (frequency: 68.587MHz)
-  Total number of paths / destination ports: 38308 / 431
+  Total number of paths / destination ports: 38830 / 431
 -------------------------------------------------------------------------
 Delay:               14.580ns (Levels of Logic = 9)
   Source:            program/Mrom_dout_rom0000 (RAM)
@@ -837,13 +865,13 @@ Delay:               5.490ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.03 secs
+Total CPU time to Xst completion: 11.59 secs
  
 --> 
 
-Total memory usage is 4531904 kilobytes
+Total memory usage is 4548152 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
 
