@@ -88,7 +88,9 @@ constant shift_rotate_id : std_logic_vector(4 downto 0) := "10100";
 -- added new instruction
 -- flip
 constant flip_id : std_logic_vector(4 downto 0) := "11111";
-constant swap_id : std_logic_vector(4 downto 0) := "10101";
+
+-- MASK: pone a cero los 4 bits mas significativos
+constant mask_id : std_logic_vector(4 downto 0) := "11101";
 --
 -- input/output group
 constant input_p_to_x_id : std_logic_vector(4 downto 0) := "10000";
@@ -165,12 +167,11 @@ component flip
           clk : in std_logic);
     end component;
 
-component swap
-    Port (
-        operand : in  std_logic_vector(7 downto 0);
-        Y       : out std_logic_vector(7 downto 0);
-        clk     : in  std_logic
-    );
+-- Definition of MASK process
+component mask
+    Port (operand : in std_logic_vector(7 downto 0);
+          Y : out std_logic_vector(7 downto 0);
+          clk : in std_logic);
 end component;
 --
 -- Definition of an 8-bit logical processing unit
@@ -201,9 +202,9 @@ component register_and_flag_enable
 	 		 i_arithmetic: in std_logic;
 			 i_shift_rotate: in std_logic;
 			 i_flip: in std_logic;					-- added new instruction
+			 i_mask: in std_logic;					-- MASK instruction
 			 i_returni: in std_logic;
 			 i_input: in std_logic;
-             i_swap: in std_logic;      
           active_interrupt : in std_logic;
           T_state : in std_logic;
           register_enable : out std_logic;
@@ -368,7 +369,7 @@ signal i_output : std_logic;
 
 -- added new instruction
 signal i_flip : std_logic;
-signal i_swap : std_logic;
+signal i_mask : std_logic;
 
 
 signal conditional : std_logic;
@@ -404,7 +405,7 @@ signal arithmetic_result       : std_logic_vector(7 downto 0);
 signal arithmetic_carry        : std_logic;
 signal ALU_result              : std_logic_vector(7 downto 0);
 signal flip_result : std_logic_vector(7 downto 0);
-signal swap_result : std_logic_vector(7 downto 0);   -- NUEVA
+signal mask_result : std_logic_vector(7 downto 0);
 --
 -- Flag signals
 --
@@ -481,10 +482,10 @@ begin
             Y => flip_result,
             clk => clk);
 
-   swap_group: swap
-    port map (operand => sX_register,
-            Y => swap_result,
-            clk => clk);
+  mask_group: mask
+    port map(operand => first_operand,
+             Y => mask_result,
+             clk => clk);
 
    logical_group: logical_bus_processing
    port map (first_operand => sX_register,
@@ -508,9 +509,9 @@ begin
 	 		    i_arithmetic => i_arithmetic,
 			 	 i_shift_rotate => i_shift_rotate,
 				 i_flip => i_flip,		  -- added new instruction
+				 i_mask => i_mask,		  -- MASK instruction
 			 	 i_returni => i_returni,
 				 i_input => i_input,
-                 i_swap => i_swap,
           	 active_interrupt => active_interrupt,
           	 T_state => T_state,
           	 register_enable => register_write_enable,
@@ -671,7 +672,7 @@ begin
 
 -- added new instruction
 	i_flip <= '1' when instruction(15 downto 11) = flip_id else '0';
-    i_swap <= '1' when instruction(15 downto 11) = swap_id else '0';
+	i_mask <= '1' when instruction(15 downto 11) = mask_id else '0';
 
 	i_add_sub <= instruction(12);
 	i_carry_nocarry <= instruction(11);
@@ -691,11 +692,11 @@ begin
 	ALU_loop: for i in 0 to 7 generate
 	begin
 		ALU_result(i) <= (shift_and_rotate_result(i) and i_shift_rotate)
-                 or (in_port(i) and i_input)
-                 or (arithmetic_result(i) and i_arithmetic)
-                 or (flip_result(i) and i_flip)
-                 or (swap_result(i) and i_swap)
-                 or (logical_result(i) and i_logical);
+							or (in_port(i) and i_input)
+							or (arithmetic_result(i) and i_arithmetic)
+							or (flip_result(i) and i_flip)		-- added new instruction
+							or (mask_result(i) and i_mask)		-- MASK instruction
+							or (logical_result(i) and i_logical);
 	end generate ALU_loop;
 
 	-- decode second operand

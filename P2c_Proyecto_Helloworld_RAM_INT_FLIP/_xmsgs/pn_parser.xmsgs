@@ -62,9 +62,6 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/stack_ram.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/swap.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/alexvb/Desktop/proyectoarqqq/proyectoarquijulio/P2c_Proyecto_Helloworld_RAM_INT_FLIP/toplevel_helloworld_RAM_Int.vhd&quot; into library work</arg>
 </msg>
 

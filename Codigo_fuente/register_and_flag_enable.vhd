@@ -18,7 +18,8 @@ entity register_and_flag_enable is
     Port (i_logical: in std_logic;
 	 		 i_arithmetic: in std_logic;
 			 i_shift_rotate: in std_logic;
-			 i_flip: in std_logic;				 -- added new instruction
+			 i_flip: in std_logic;
+			 i_mask: in std_logic;				 -- added new instruction
 			 i_returni: in std_logic;
 			 i_input: in std_logic;
           active_interrupt : in std_logic;
@@ -45,7 +46,7 @@ begin
   --
   -- added new instruction, uncomment this instruction and comment next instruction
   -- to enable the new instruction
-   reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input or i_flip) 
+   reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input or i_flip or i_mask) 
   								and (not active_interrupt);
 
 --  reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input) 
