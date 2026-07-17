@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Thu Jul 16 19:37:13 2026">
+  <application stringID="Map" timeStamp="Fri Jul 17 11:41:56 2026">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -73,9 +73,9 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4526328"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="10 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="5 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4526344"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="7 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="3 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
         <item AVAILABLE="9312" dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="174"/>
@@ -406,9 +406,9 @@
         <item stringID="MAP_INITP_05" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INITP_06" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INITP_07" value="0000000000000000000000000000000000000000000000000000000000000000"/>
-        <item stringID="MAP_INIT_00" value="088080FFA20ED8210309D828D5070A8082FFD001D8144100A8004040D807F000"/>
-        <item stringID="MAP_INIT_01" value="D82188FF00FFD5183301A10ED82189FF0308D82188FF00009000D50C33015200"/>
-        <item stringID="MAP_INIT_02" value="00009000D5293401D52A3501051004039000D5223401D5233501052204039000"/>
+        <item stringID="MAP_INIT_00" value="5200088080FFA20ED8200309D827D5060A8082FFD005D8134100A8000043F000"/>
+        <item stringID="MAP_INIT_01" value="9000D82088FF00FFD5173301A10ED82089FF0308D82088FF00009000D50B3301"/>
+        <item stringID="MAP_INIT_02" value="000000009000D5283401D5293501051004039000D5213401D522350105220403"/>
         <item stringID="MAP_INIT_03" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INIT_04" value="0000000000000000000000000000000000000000000000000000000000000000"/>
         <item stringID="MAP_INIT_05" value="0000000000000000000000000000000000000000000000000000000000000000"/>
