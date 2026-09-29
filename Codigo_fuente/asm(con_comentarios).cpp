@@ -786,6 +786,7 @@ void write_program_word(void)                                                   
 						fprintf(ofp,"ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
 						error++;
 					}
+					break;
 
 				case 30: /* MASK */
 					insert_instruction(mask_id, op[i].address);
@@ -798,7 +799,6 @@ void write_program_word(void)                                                   
 						fprintf(ofp,"ERROR - Invalid operand %s on line %d\n",op[i].op1, i+1);
 						error++;
 					}
-					break;
 					break;
 			}
 		}
